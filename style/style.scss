@@ -213,7 +213,9 @@ quote {
 			.name {
 				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Montserrat", "Helvetica Neue", sans-serif;
 				font-size: 18px;
+				font-weight: normal;
 				letter-spacing: normal;
+				margin: 0;
 			}
 
 			.company {
@@ -242,4 +244,16 @@ quote {
 		}
 	}
 
+}
+
+.screen-reader-text {
+	position: absolute;
+	margin: -1px;
+	padding: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	border: 0;
+	word-wrap: normal !important;
 }
