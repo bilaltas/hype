@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Card-5" transform="translate(-1287.000000, -364.000000)" fill="#FFFFFF">
+            <g id="Text" transform="translate(97.000000, 281.000000)">
+                <g id="Arrows" transform="translate(0.000000, 82.000000)">
+                    <path d="M1200.52,11.544 L1192.522,19.551 C1191.937,20.136 1190.991,20.136 1190.406,19.551 C1189.822,18.966 1189.822,18.018 1190.406,17.433 L1197.347,10.485 L1190.406,3.536 C1189.822,2.951 1189.822,2.003 1190.406,1.418 C1190.991,0.833 1191.937,0.833 1192.522,1.418 L1200.52,9.426 C1201.104,10.011 1201.104,10.959 1200.52,11.544 L1200.52,11.544 Z" id="Right"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

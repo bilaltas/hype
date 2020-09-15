@@ -1,0 +1,245 @@
+@import "normalize.css";
+@import url('https://use.fontawesome.com/releases/v5.14.0/css/all.css');
+@import "../script/slick/slick.css";
+
+$first-breakpoint: 600px;
+
+html {
+	background-color: #323232;
+	background-image: url(../image/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: normal;
+	letter-spacing: 1.4px;
+	color: white;
+}
+
+body {
+	padding: 40px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+figure {
+	margin: 0;
+
+	& > img {
+		max-width: 100%;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1220px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	text-align: center;
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	width: 100%;
+	max-width: 408px;
+	margin: 70px auto 90px;
+	border: 2px solid white;
+	border-radius: 50px;
+	text-transform: uppercase;
+	overflow: hidden;
+
+	& > a {
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: 500ms;
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+
+		&.active {
+			background-color: #fff;
+			color: #4F5362;
+		}
+
+	}
+}
+
+main {
+
+	& > section {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+}
+
+quote {
+	display: block;
+	text-align: center;
+	font-size: 25px;
+	line-height: normal;
+	font-weight: 900;
+	padding: 0 10px;
+
+	@media (min-width: $first-breakpoint) {
+		padding: 0 60px;
+		font-size: 52px;
+		line-height: 63px;
+	}
+
+	&::before {
+		content: "“";
+	}
+
+	&::after {
+		content: "”";
+	}
+}
+
+.text {
+
+	&-center {
+		text-align: center;
+	}
+
+}
+
+.slider,
+.slider-nav {
+	position: relative;
+
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 10px;
+		transition: 500ms;
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		&.slick-prev {
+			right: 100%;
+		}
+
+		&.slick-next {
+			left: 100%;
+		}
+	}
+
+
+
+}
+
+.slider-nav {
+	margin-top: 75px;
+
+	.slick-slide {
+		padding: 25px 25px 55px;
+		outline: none;
+
+		&.slick-current:focus,
+		&.slick-current {
+			.card {
+				box-shadow: 0 25px 55px 0 rgba(0,0,0,0.69);
+				background-color: #fff;
+				color: #4F5362;
+			}
+		}
+	}
+
+}
+
+.card {
+	background-color: rgba(34, 35, 40, 0.7);
+	border-radius: 5px;
+	padding: 25px;
+}
+
+.person {
+
+	& > .card {
+		display: grid;
+		grid-template-columns: 70px 1fr;
+		gap: 20px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgba(34, 35, 40, 0.9);
+		}
+
+		.avatar {
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+
+			& > img {
+				object-fit: cover;
+			}
+		}
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			.name {
+				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Montserrat", "Helvetica Neue", sans-serif;
+				font-size: 18px;
+				letter-spacing: normal;
+			}
+
+			.company {
+				font-size: 12px;
+				letter-spacing: 1.2px;
+				line-height: 24px;
+				font-weight: 300;
+				text-transform: uppercase;
+				color: #A8ACB9;
+			}
+
+			.social {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+
+				& > a {
+					font-size: 18px;
+
+					&:hover {
+						opacity: 0.7;
+					}
+
+				}
+			}
+		}
+	}
+
+}

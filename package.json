@@ -1,0 +1,28 @@
+{
+  "name": "singleton",
+  "version": "1.0.0",
+  "description": "Test site for Case 1",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-util": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cli": "latest",
+    "gulp-sass": "latest",
+    "gulp-sass-lint": "latest",
+    "gulp-sourcemaps": "latest"
+  },
+  "keywords": [],
+  "author": "Twelve12",
+  "license": "ISC",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "browserslist": [
+    "ff > 2",
+    "> 2%",
+    "ie 8"
+  ]
+}

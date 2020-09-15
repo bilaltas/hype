@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import url(normalize.css);
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+@import url(../script/slick/slick.css);
+html {
+  background-color: #323232;
+  background-image: url(../image/background.jpg);
+  -moz-background-size: cover;
+       background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  color: white;
+}
+
+body {
+  padding: 40px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+figure > img {
+  max-width: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+.container {
+  max-width: 1220px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-box-align: center;
+       align-items: center;
+  width: 100%;
+  max-width: 408px;
+  margin: 70px auto 90px;
+  border: 2px solid white;
+  -moz-border-radius: 50px;
+       border-radius: 50px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+nav > a {
+  height: 50px;
+  display: -moz-box;
+  display: flex;
+  -moz-box-align: center;
+       align-items: center;
+  -moz-box-pack: center;
+       justify-content: center;
+  -moz-transition: 500ms;
+  transition: 500ms;
+}
+
+nav > a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav > a.active {
+  background-color: #fff;
+  color: #4F5362;
+}
+
+main > section {
+  display: none;
+}
+
+main > section.active {
+  display: block;
+}
+
+quote {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  line-height: normal;
+  font-weight: 900;
+  padding: 0 10px;
+}
+
+@media (min-width: 600px) {
+  quote {
+    padding: 0 60px;
+    font-size: 52px;
+    line-height: 63px;
+  }
+}
+
+quote::before {
+  content: "“";
+}
+
+quote::after {
+  content: "”";
+}
+
+.text-center {
+  text-align: center;
+}
+
+.slider,
+.slider-nav {
+  position: relative;
+}
+
+.slider .slick-arrow,
+.slider-nav .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+       transform: translateY(-50%);
+  padding: 10px;
+  -moz-transition: 500ms;
+  transition: 500ms;
+}
+
+.slider .slick-arrow:hover,
+.slider-nav .slick-arrow:hover {
+  opacity: 0.7;
+}
+
+.slider .slick-arrow.slick-prev,
+.slider-nav .slick-arrow.slick-prev {
+  right: 100%;
+}
+
+.slider .slick-arrow.slick-next,
+.slider-nav .slick-arrow.slick-next {
+  left: 100%;
+}
+
+.slider-nav {
+  margin-top: 75px;
+}
+
+.slider-nav .slick-slide {
+  padding: 25px 25px 55px;
+  outline: none;
+}
+
+.slider-nav .slick-slide.slick-current:focus .card, .slider-nav .slick-slide.slick-current .card {
+  -moz-box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.69);
+       box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.69);
+  background-color: #fff;
+  color: #4F5362;
+}
+
+.card {
+  background-color: rgba(34, 35, 40, 0.7);
+  -moz-border-radius: 5px;
+       border-radius: 5px;
+  padding: 25px;
+}
+
+.person > .card {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.person > .card:hover {
+  background-color: rgba(34, 35, 40, 0.9);
+}
+
+.person > .card .avatar {
+  width: 70px;
+  height: 70px;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
+}
+
+.person > .card .avatar > img {
+  object-fit: cover;
+}
+
+.person > .card .info {
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+       flex-direction: column;
+  gap: 10px;
+}
+
+.person > .card .info .name {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Montserrat", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  letter-spacing: normal;
+}
+
+.person > .card .info .company {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #A8ACB9;
+}
+
+.person > .card .info .social {
+  display: -moz-box;
+  display: flex;
+  -moz-box-align: center;
+       align-items: center;
+  gap: 20px;
+}
+
+.person > .card .info .social > a {
+  font-size: 18px;
+}
+
+.person > .card .info .social > a:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */
